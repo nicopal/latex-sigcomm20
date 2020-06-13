@@ -1,30 +1,33 @@
 \section{Introduction}
-\Blindtext
+% Budget: 1/2 pages
+Increasingly fine-grained billing for both netowrk~\cite{thimmaraju:2020} and computation resources~\cite{zhu:2017} is a notable recent trend, further acceleraged by the emergence of serverless computing~\cite{baldini:2017}.
+~\cite{zhu:2017, thimmaraju:2020}
+Such fine-grained billing creates strong incentives to develop and deploy applications that utilize a minimum amount of computing and network resources.
+This calls for a novel approach in application development and deployment, allowing to trim down the use of computing and network resources.
 
-\begin{figure}[tp]
-\centering
-\includegraphics{figures/mouse}
-\caption{\blindtext}
-\end{figure}
+\section{Architecture}
 
-\section{Related Work}
-\blindtext
+%TODO: 
+% 1. New figure - Similar to Fig. 1 from Flowrider, maybe redrawn
+% Architecture description (based on the Flowrider paper but _not_ copy-pasted
+% Budget: 1/2 pages
 
-And we need some citation here\cite{floyd1993random, stoica2001chord}
 
-\Blindtext
+\section{Use Cases and Demonstration}
+%The demo aims to show a novel key distribution mechanism for cloud networks, which results in a reduced computation effort necessary to generate authentication credentials and establish secure communication between endpoints.
+%The video consists of
+The approach is reflected in scenario introduced below:
+two endpoints establish a communication session over an OpenFlow switch.
+Since there is no flow rule matching this network pattern, the switch upstreams the packet to the controller for inspection.
+%TODO Further Clarify Use cases and demonstration
+% Budget: 1/3 pages
 
-\section{System Design}
+\section{Future Work}
+% v1 Done
+We intend to further expand this work in several directions.
+A first target is to adapt of the key sharing mechanism to other widely used network security protocol suites (primarily IPsec). 
+Other future works includes verifying the mechanism's performance in hyperscale settings and integrating it with common cloud orchestration software.
 
-\subsection{The First Layer}
-\Blindtext
-
-\subsection{The Second Layer}
-\Blindtext
-
-\section{Evaluation}
-\Blindtext
-
-\section{Conclusion}
-\blindtext
-
+\section{Acknowledgements}
+% v1 Done
+This work was financially supported in part by the Swedish Foundation for Strategic Research, with the grant RIT17-0035.
